@@ -1,0 +1,10 @@
+# Jira Explorer — Data Dimensions
+# Core requirements (required)
+PyQt5>=5.15.0
+requests>=2.31.0
+
+# Optional — secure credential storage in Windows Credential Manager / macOS Keychain
+keyring>=24.0.0
+
+# Optional — Analytics dashboard charts
+matplotlib>=3.7.0
