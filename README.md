@@ -1,4 +1,4 @@
-# Jira Explorer — Data Dimensions
+# Jira Explorer - Gravity Data
 
 Desktop Jira ticket viewer with full comment threads, filtering, search, and an analytics dashboard.
 Built with Python + PyQt5, styled in Data Dimensions brand colors.
