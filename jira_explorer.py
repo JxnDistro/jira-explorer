@@ -4,7 +4,7 @@ Jira Explorer — Data Dimensions
 Desktop ticket viewer: assigned issues, comments, filters, search, analytics.
 
 Authentication: Jira Cloud API token (email + token)
-Default instance : datadimensions2.atlassian.net (overridable in Settings)
+Default instance : company.atlassian.net (overridable in Settings)
 
 Run:  python jira_explorer.py
 """
