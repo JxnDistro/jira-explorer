@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Jira Explorer — Data Dimensions
+Jira Explorer
 Desktop ticket viewer: assigned issues, comments, filters, search, analytics.
 
 Authentication: Jira Cloud API token (email + token)
