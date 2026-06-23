@@ -547,9 +547,9 @@ GlassCard = PrecisionPanel
 # ─────────────────────────────────────────────────────────────────────────────
 
 APP_NAME     = "Jira Explorer"
-APP_ORG      = "DataDimensions"
+APP_ORG      = "company"
 KEYRING_SVC  = "dd_jira_explorer"
-DEFAULT_URL  = "https://datadimensions2.atlassian.net"
+DEFAULT_URL  = "https://company2.atlassian.net"
 
 # OAuth 2.0 (3LO) — Atlassian Developer Console app
 OAUTH_CLIENT_ID     = "DO86yrZ9d7wEg3jtPuG0dpjNuVAIvdKq"
@@ -1578,7 +1578,7 @@ class OAuthManager:
         return resp.json()
 
     def get_cloud_id(self, access_token: str) -> Tuple[str, str]:
-        """Returns (cloud_id, site_name) — prefers datadimensions2 if multiple sites."""
+        """Returns (cloud_id, site_name) — prefers company2 if multiple sites."""
         resp = requests.get(self.RESOURCES_URL, headers={
             "Authorization": f"Bearer {access_token}", "Accept": "application/json"
         }, timeout=20)
@@ -1587,7 +1587,7 @@ class OAuthManager:
         if not resources:
             raise ValueError("No accessible Jira sites found for this account.")
         for r in resources:
-            if "datadimensions2" in r.get("url", ""):
+            if "company2" in r.get("url", ""):
                 return r["id"], r.get("name", r["url"])
         r = resources[0]
         return r["id"], r.get("name", r["url"])
