@@ -1,7 +1,7 @@
 # Jira Explorer - Gravity Data
 
 Desktop Jira ticket viewer with full comment threads, filtering, search, and an analytics dashboard.
-Built with Python + PyQt5, styled in Data Dimensions brand colors.
+Built with Python + PyQt5, styled in company brand colors.
 
 ---
 
@@ -17,7 +17,7 @@ Built with Python + PyQt5, styled in Data Dimensions brand colors.
 | **Analytics** | 6 charts: by status, priority, type, project, creation trend, summary stats |
 | **Pagination** | Fetches all assigned issues automatically (handles > 100) |
 | **Secure auth** | API token stored in Windows Credential Manager / macOS Keychain via `keyring` |
-| **Dark theme** | Deep navy Data Dimensions palette throughout |
+| **Dark theme** | Deep navy company palette throughout |
 
 ---
 
