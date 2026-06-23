@@ -4603,7 +4603,7 @@ class MainWindow(QMainWindow):
         self._startup_overlay: Optional[StartupRevealOverlay] = None
         self._startup_played = False
 
-        self.setWindowTitle("Jira Explorer — Data Dimensions")
+        self.setWindowTitle("Jira Explorer — company")
         self.setMinimumSize(1100, 680)
         self.resize(1440, 880)
 
